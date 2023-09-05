@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+    </style>
+    <title>Maldonautas</title>
+    <script>
+
+
+        let x = Math.random() * (100 - 0) + 0;
+        let y = Math.round(x);
+        let z = parseInt(y)
+        console.log(z)
+
+        function calculate() {
+            let numero = parseInt(document.getElementById("number").value)
+
+            if (numero == z) {
+                console.log("Numero Correcto!")
+                document.getElementById("resultado").innerHTML = "Correcto"
+                document.getElementById("resultado").style.color = "green"
+            } else {
+                console.log("Numero incorrecto. Generando nuevo numero")
+                document.getElementById("resultado").innerHTML = "Incorrecto"
+                document.getElementById("resultado").style.color = "red"
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Adivina el numero</h1>
+    </div>
+    <div class="content">
+        <div>
+            <input type="text" name="Numero" id="number" placeholder="Escribe el numero" />
+            <button type="submit" onclick="calculate()">Subir</button>
+            <p>
+                Estado:
+            <p id="resultado"></p>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+body {
+    background-color: #212121;
+    color: #FAFAFA;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: #757575;
+    padding: 2rem;
+}
+
+.content {
+    background-color: #424242;
+    padding: 2rem;
+    height: 100%;
+}
